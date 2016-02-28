@@ -1,5 +1,6 @@
 {
     "name": "rsol/yii2-alert",
+    "version":"1.0.0",
     "description": "Yii-Framework widget for Flash Alerts",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","alert","notify"],
