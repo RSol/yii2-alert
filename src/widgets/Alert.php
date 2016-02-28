@@ -50,6 +50,27 @@ class Alert extends Widget
     ];
 
     /**
+     * @var string
+     * If you are not using any UI library, you can use the included styling, called Bright Theme. It is the default.
+     * If you are using Bootstrap version 2, include this line somewhere before your first notice:
+     *
+     *     PNotify.prototype.options.styling = "bootstrap2";
+     *
+     * If you are using Bootstrap version 3, include this line somewhere before your first notice:
+     *
+     *     PNotify.prototype.options.styling = "bootstrap3";
+     *
+     * If you are using jQuery UI, include this line somewhere before your first notice:
+     *
+     *     PNotify.prototype.options.styling = "jqueryui";
+     *
+     * If you are using Bootstrap 3 with Font Awesome, include this line somewhere before your first notice:
+     *
+     *     PNotify.prototype.options.styling = "fontawesome";
+     */
+    public $style = 'bootstrap3';
+
+    /**
      * Initializes the widget.
      * This method will register the bootstrap asset bundle. If you override this method,
      * make sure you call the parent implementation first.
@@ -87,6 +108,7 @@ class Alert extends Widget
                     }
                     $events = implode("\n", $events);
 
+                    $this->view->registerJs("PNotify.prototype.options.styling = '{$this->style}';");
                     $this->view->registerJs("var $name = new PNotify(" . Json::encode($options) . ");\n$events");
                 }
 

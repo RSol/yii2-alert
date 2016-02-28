@@ -32,6 +32,13 @@ use rsol\alert\widgets\Alert;
 ```php
 <?= Alert::widget() ?>
 ```
+you can style your PNotify by
+
+```php
+<?= Alert::widget([
+    'style' => 'bootstrap3',//default
+]) ?>
+```
 
 
 in any place of your code:

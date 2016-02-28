@@ -17,9 +17,9 @@ class AlertAsset extends AssetBundle
     public $sourcePath = '@bower/pnotify';
 
     public $css = [
-        'pnotify.custom.min.css',
+        'dist/pnotify.css',
     ];
     public $js = [
-        'pnotify.custom.min.js',
+        'dist/pnotify.js',
     ];
 }
