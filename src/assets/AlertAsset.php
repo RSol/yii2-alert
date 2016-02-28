@@ -1,11 +1,4 @@
 <?php
-/**
- * AlertAsset class file.
- *
- * @author Virtual Frameworks LLC <post@virtualhealth.com>
- * @link http://www.virtualhealth.com/
- * @copyright Copyright &copy; 2011-2013 Virtual Frameworks LLC
- */
 
 /**
  * AlertAsset
